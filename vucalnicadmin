@@ -110,7 +110,7 @@ grass.Parent = game:GetService("Lighting")
 grass.Size = Vector3.new(402, 1.463, 475)
 grass.Position = Vector3.new(929.5, 94.2336, 2273.6)
 grass.Material = Enum.Material.Grass
-grass.Color = Color3.fromRGB(151, 0, 0)
+grass.Color = Color3.fromRGB(255, 0, 0)
 grass.Orientation = Vector3.new(0, 0, 0)
 
 if game.Players.LocalPlayer.PlayerGui.TestGui:FindFirstChild("TextButton") then
@@ -130,43 +130,43 @@ Watermark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Holder.Name = "Holder"
 Holder.Parent = Watermark
-Holder.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+Holder.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Holder.BackgroundTransparency = 1.000
 Holder.Position = UDim2.new(0, 0, 1, -37)
 Holder.Size = UDim2.new(0, 211, 0, 32)
 
 RETARDEDLABELS.Name = "RETARDEDLABELS"
 RETARDEDLABELS.Parent = Holder
-RETARDEDLABELS.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+RETARDEDLABELS.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 RETARDEDLABELS.BackgroundTransparency = 1.000
-RETARDEDLABELS.Position = UDim2.new(0.037914671, 0, 0.183227539, 0)
-RETARDEDLABELS.Size = UDim2.new(0.545604885, 0, 0.625000536, 0)
+RETARDEDLABELS.Position = UDim2.new(2.35, 3, -2, -510)
+RETARDEDLABELS.Size = UDim2.new(1, 1, 1, 0)
 RETARDEDLABELS.Font = Enum.Font.SourceSansBold
 RETARDEDLABELS.Text = "Vulcanic"
 RETARDEDLABELS.TextColor3 = Color3.fromRGB(0, 0, 0)
-RETARDEDLABELS.TextSize = 28.000
+RETARDEDLABELS.TextSize = 45
 
 RETARDEDLABELS_2.Name = "RETARDEDLABELS"
 RETARDEDLABELS_2.Parent = Holder
-RETARDEDLABELS_2.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+RETARDEDLABELS_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 RETARDEDLABELS_2.BackgroundTransparency = 1.000
-RETARDEDLABELS_2.Position = UDim2.new(0.578780293, 0, 0.183227539, 0)
-RETARDEDLABELS_2.Size = UDim2.new(0.345114082, 0, 0.625, 0)
+RETARDEDLABELS_2.Position = UDim2.new(2.99, 3, -2, -510)
+RETARDEDLABELS_2.Size = UDim2.new(1, 1, 1, 0)
 RETARDEDLABELS_2.Font = Enum.Font.SourceSansBold
 RETARDEDLABELS_2.Text = "ADMIN"
-RETARDEDLABELS_2.TextColor3 = Color3.fromRGB(151, 0, 0)
-RETARDEDLABELS_2.TextSize = 28.000
+RETARDEDLABELS_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+RETARDEDLABELS_2.TextSize = 45
 
 VersionLabel.Name = "VersionLabel"
 VersionLabel.Parent = Holder
-VersionLabel.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+VersionLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 VersionLabel.BackgroundTransparency = 1.000
-VersionLabel.Position = UDim2.new(0.923894346, 0, 0.276977539, 0)
-VersionLabel.Size = UDim2.new(0.241706163, 0, 0.4375, 0)
+VersionLabel.Position = UDim2.new(3.8, 3, -2, -510)
+VersionLabel.Size = UDim2.new(1, 1, 1, 0)
 VersionLabel.Font = Enum.Font.SourceSans
 VersionLabel.Text = version
-VersionLabel.TextColor3 = Color3.fromRGB(151, 0, 0)
-VersionLabel.TextSize = 14.000
+VersionLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+VersionLabel.TextSize = 40
 VersionLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 local VulcanicAdmin = Instance.new("ScreenGui")
@@ -218,14 +218,6 @@ VulcanicAdmin.Name = "Vulcanic Admin"
 VulcanicAdmin.Parent = game.CoreGui
 VulcanicAdmin.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Loader.Name = "Loader"
-Loader.Parent = VulcanicAdmin
-Loader.AnchorPoint = Vector2.new(0.5, 0.5)
-Loader.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
-Loader.BorderSizePixel = 0
-Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
-Loader.Size = UDim2.new(0, 263, 0, 102)
-
 Title_3.Name = "Title"
 Title_3.Parent = Loader
 Title_3.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
@@ -235,8 +227,8 @@ Title_3.Position = UDim2.new(0.125991181, 0, 0, 5)
 Title_3.Size = UDim2.new(0, 194, 0, 22)
 Title_3.Font = Enum.Font.Code
 Title_3.Text = "Vulcanic Admin-Loader "..version
-Title_3.TextColor3 = Color3.fromRGB(151, 0, 0)
-Title_3.TextSize = 12.000
+Title_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title_3.TextSize = 16
 
 Close_3.Name = "Close"
 Close_3.Parent = Loader
@@ -248,15 +240,15 @@ Close_3.Selectable = false
 Close_3.Size = UDim2.new(0, 22, 0, 22)
 Close_3.Font = Enum.Font.Code
 Close_3.Text = "_"
-Close_3.TextColor3 = Color3.fromRGB(151, 0, 0)
+Close_3.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close_3.TextSize = 14.000
 
 ON.Name = "ON"
 ON.Parent = Loader
 ON.AnchorPoint = Vector2.new(0.5, 0.5)
 ON.BorderSizePixel = 1
-ON.BorderColor3 = Color3.fromRGB(151, 0, 0)
-ON.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+ON.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ON.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 ON.Position = UDim2.new(0.489852607, 0, 0.470588237, 10)
 ON.Size = UDim2.new(0, 248, 0, 20)
 
@@ -272,27 +264,27 @@ LoadingMessage.Name = "LoadingMessage"
 LoadingMessage.Parent = Loader
 LoadingMessage.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 LoadingMessage.BorderSizePixel = 1
-LoadingMessage.BorderColor3 = Color3.fromRGB(151, 0, 0)
+LoadingMessage.BorderColor3 = Color3.fromRGB( 4, 175, 236)
 LoadingMessage.Position = UDim2.new(0.0171102658, 0, 0.754901946, 0)
 LoadingMessage.Size = UDim2.new(0, 249, 0, 18)
 LoadingMessage.Font = Enum.Font.SourceSans
 LoadingMessage.Text = "Checking Whitelist..."
-LoadingMessage.TextColor3 = Color3.fromRGB(151, 0, 0)
+LoadingMessage.TextColor3 = Color3.fromRGB( 4, 175, 236)
 LoadingMessage.TextSize = 14.000
 
-wait(0.3)
+wait(0)
 LoadingMessage.Text = "Checking Updates..."
 OFF.Size = UDim2.new(0, 208, 0, 20)
-wait(0.3)
+wait(0)
 LoadingMessage.Text = "Checking Validation..."
 OFF.Size = UDim2.new(0, 188, 0, 20)
-wait(0.3)
+wait(0)
 LoadingMessage.Text = "Loading UI..."
 OFF.Size = UDim2.new(0, 160, 0, 20)
-wait(0.3)
+wait(0)
 LoadingMessage.Text = "Finalizing..."
 OFF.Size = UDim2.new(0, 80, 0, 20)
-wait(0.3)
+wait(0)
 OFF.Size = UDim2.new(0, 0, 0, 20)
 OFF.Visible = false
 Loader.Visible = false
@@ -302,7 +294,7 @@ Commands.Parent = VulcanicAdmin
 Commands.AnchorPoint = Vector2.new(0,1)
 Commands.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Commands.BorderSizePixel = 1
-Commands.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Commands.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Commands.Position = UDim2.new(0.5, 0, 0.5, 0)
 Commands.Size = UDim2.new(0, 263, 0, 198)
 Commands.Visible = false
@@ -315,7 +307,7 @@ Title.Position = UDim2.new(0.125991181, 0, 0, 5)
 Title.Size = UDim2.new(0, 194, 0, 22)
 Title.Font = Enum.Font.Code
 Title.Text = "Vulcanic Admin-Commands"
-Title.TextColor3 = Color3.fromRGB(151, 0, 0)
+Title.TextColor3 = Color3.fromRGB(255, 0, 0)
 Title.TextSize = 12.000
 
 Close.Name = "Close"
@@ -329,14 +321,14 @@ Close.Selectable = false
 Close.Size = UDim2.new(0, 22, 0, 22)
 Close.Font = Enum.Font.Code
 Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(151, 0, 0)
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close.TextSize = 14.000
 
 Commands_2.Name = "Commands"
 Commands_2.Parent = Commands
 Commands_2.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Commands_2.BorderSizePixel = 1
-Commands_2.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Commands_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Commands_2.Position = UDim2.new(0.0114068445, 0, 0.161616161, 0)
 Commands_2.Size = UDim2.new(0, 256, 0, 161)
 
@@ -347,16 +339,16 @@ Padding.BorderSizePixel = 0
 Padding.Position = UDim2.new(0.0166666508, 0, 0.0421051607, 0)
 Padding.Selectable = false
 Padding.Size = UDim2.new(0, 249, 0, 148)
-Padding.ScrollBarThickness = 7
+Padding.ScrollBarThickness = 10
 
 TextLabel.Parent = nil
 TextLabel.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Font = Enum.Font.Code
 TextLabel.Text = ""
-TextLabel.TextColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel.TextSize = 14.000
-TextLabel.Size = UDim2.new(1, 0, 0, TextLabel.TextSize)
+TextLabel.Size = UDim2.new(10, 0, 0, TextLabel.TextSize)
 TextLabel.TextWrapped = true
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel.TextYAlignment = Enum.TextYAlignment.Top
@@ -371,12 +363,12 @@ Title_2.Parent = Credits
 Title_2.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Title_2.BackgroundTransparency = 1.000
 Title_2.BorderSizePixel = 1
-Title_2.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Title_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Title_2.Position = UDim2.new(0.151106179, 0, 0, 5)
 Title_2.Size = UDim2.new(0, 127, 0, 22)
 Title_2.Font = Enum.Font.Code
 Title_2.Text = "Vulcanic Admin-Credit"
-Title_2.TextColor3 = Color3.fromRGB(151, 0, 0)
+Title_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 Title_2.TextSize = 12.000
 
 Close_2.Name = "Close"
@@ -384,90 +376,64 @@ Close_2.Parent = Credits
 Close_2.Active = false
 Close_2.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Close_2.BorderSizePixel = 1
-Close_2.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Close_2.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Close_2.Position = UDim2.new(0.857894659, 0, 0, 5)
 Close_2.Selectable = false
 Close_2.Size = UDim2.new(0, 22, 0, 22)
 Close_2.Font = Enum.Font.Code
 Close_2.Text = "X"
-Close_2.TextColor3 = Color3.fromRGB(151, 0, 0)
+Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close_2.TextSize = 14.000
 
 Main.Name = "Main"
 Main.Parent = VulcanicAdmin
-Main.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 1
-Main.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Main.Position = UDim2.new(0, 5, 1, -100)
 Main.Size = UDim2.new(0, 190, 0, 59)
 Main.Visible = true
 
 Bar.Name = "Bar"
 Bar.Parent = Main
-Bar.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Bar.BorderSizePixel = 1
-Bar.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Bar.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Bar.Position = UDim2.new(0.0195272341, 0, 0.545114696, 0)
 Bar.Size = UDim2.new(0, 182, 0, 22)
 
 Input.Name = "Input"
 Input.Parent = Bar
-Input.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+Input.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Input.BackgroundTransparency = 1.000
 Input.Position = UDim2.new(0.0164835174, 0, 0.0909090936, 0)
 Input.Size = UDim2.new(0, 175, 0, 17)
 Input.Font = Enum.Font.SourceSans
 Input.PlaceholderText = ""
 Input.Text = ""
-Input.TextColor3 = Color3.fromRGB(151, 0, 0)
-Input.TextSize = 14.000
+Input.TextColor3 = Color3.fromRGB(255, 0, 0)
+Input.TextSize = 20.000
 Input.TextXAlignment = Enum.TextXAlignment.Left
 
-ShowOutput.Name = "ShowOutput"
-ShowOutput.Parent = Main
-ShowOutput.Active = false
-ShowOutput.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-ShowOutput.BorderSizePixel = 1
-ShowOutput.BorderColor3 = Color3.fromRGB(151, 0, 0)
-ShowOutput.Position = UDim2.new(0.705263197, 0, 0.0782889426, 0)
-ShowOutput.Selectable = false
-ShowOutput.Size = UDim2.new(0, 22, 0, 22)
-ShowOutput.Font = Enum.Font.Code
-ShowOutput.Text = ">_"
-ShowOutput.TextColor3 = Color3.fromRGB(151, 0, 0)
-ShowOutput.TextSize = 14.000
 
-ShowCommands.Name = "ShowCommands"
-ShowCommands.Parent = Main
-ShowCommands.Active = false
-ShowCommands.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
-ShowCommands.BorderSizePixel = 1
-ShowCommands.BorderColor3 = Color3.fromRGB(151, 0, 0)
-ShowCommands.Position = UDim2.new(0.857894659, 0, 0.0782889426, 0)
-ShowCommands.Selectable = false
-ShowCommands.Size = UDim2.new(0, 22, 0, 22)
-ShowCommands.Font = Enum.Font.Code
-ShowCommands.Text = "?"
-ShowCommands.TextColor3 = Color3.fromRGB(151, 0, 0)
-ShowCommands.TextSize = 14.000
 
 Title_4.Name = "Title"
 Title_4.Parent = Main
 Title_4.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Title_4.BackgroundTransparency = 1.000
 Title_4.BorderSizePixel = 0
-Title_4.Position = UDim2.new(0.151106179, 0, 0.0874871686, 0)
+Title_4.Position = UDim2.new(0.25, 0, 0.0874871686, 0)
 Title_4.Size = UDim2.new(0, 99, 0, 22)
 Title_4.Font = Enum.Font.Code
 Title_4.Text = "Vulcanic Admin"
-Title_4.TextColor3 = Color3.fromRGB(151, 0, 0)
-Title_4.TextSize = 12.000
+Title_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title_4.TextSize = 18
 
 Output.Name = "Output"
 Output.Parent = VulcanicAdmin
 Output.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Output.BorderSizePixel = 1
-Output.BorderColor3 = Color3.fromRGB(151, 0, 0)
+Output.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Output.Position = UDim2.new(0.5, 0, 0.5, 0)
 Output.Size = UDim2.new(0, 190, 0, 132)
 Output.Visible = false
@@ -481,7 +447,7 @@ Title_5.Position = UDim2.new(0.151106179, 0, 0, 5)
 Title_5.Size = UDim2.new(0, 127, 0, 22)
 Title_5.Font = Enum.Font.Code
 Title_5.Text = "Vulcanic Admin-Output"
-Title_5.TextColor3 = Color3.fromRGB(151, 0, 0)
+Title_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 Title_5.TextSize = 12.000
 
 Close_4.Name = "Close"
@@ -494,7 +460,7 @@ Close_4.Selectable = false
 Close_4.Size = UDim2.new(0, 22, 0, 22)
 Close_4.Font = Enum.Font.Code
 Close_4.Text = "X"
-Close_4.TextColor3 = Color3.fromRGB(151, 0, 0)
+Close_4.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close_4.TextSize = 14.000
 
 Output_2.Name = "Output"
@@ -513,12 +479,12 @@ Padding_2.Position = UDim2.new(0.0166666675, 0, 0.042105265, 0)
 Padding_2.Size = UDim2.new(0, 174, 0, 87)
 
 TextLabel_3.Parent = Padding_2
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_3.Font = Enum.Font.Code
 TextLabel_3.Text = "\n\n\n\n\n\n\n"
-TextLabel_3.TextColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_3.TextYAlignment = Enum.TextYAlignment.Bottom
@@ -532,13 +498,13 @@ Hover1.Size = UDim2.new(0, 156, 0, 16)
 Hover1.Visible = false
 
 TextLabel_4.Parent = Hover1
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.Position = UDim2.new(0, 4, 0, 0)
 TextLabel_4.Size = UDim2.new(1, -4, 1, 0)
 TextLabel_4.Font = Enum.Font.Code
 TextLabel_4.Text = "Opens Commands Window"
-TextLabel_4.TextColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -551,13 +517,13 @@ Hover2.Size = UDim2.new(0, 91, 0, 16)
 Hover2.Visible = false
 
 TextLabel_5.Parent = Hover2
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.Position = UDim2.new(0, 4, 0, 0)
 TextLabel_5.Size = UDim2.new(1, -4, 1, 0)
 TextLabel_5.Font = Enum.Font.Code
 TextLabel_5.Text = "Opens Output"
-TextLabel_5.TextColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -570,13 +536,13 @@ Hover3.Size = UDim2.new(0, 91, 0, 16)
 Hover3.Visible = false
 
 TextLabel_6.Parent = Hover3
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.Position = UDim2.new(0, 4, 0, 0)
 TextLabel_6.Size = UDim2.new(1, -4, 1, 0)
 TextLabel_6.Font = Enum.Font.Code
 TextLabel_6.Text = "Close Window"
-TextLabel_6.TextColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_6.TextSize = 14.000
 TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -589,13 +555,13 @@ Hover4.Size = UDim2.new(0, 113, 0, 16)
 Hover4.Visible = false
 
 TextLabel_7.Parent = Hover4
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_7.BackgroundTransparency = 1.000
 TextLabel_7.Position = UDim2.new(0, 4, 0, 0)
 TextLabel_7.Size = UDim2.new(1, -4, 1, 0)
 TextLabel_7.Font = Enum.Font.Code
 TextLabel_7.Text = "Minimize Window"
-TextLabel_7.TextColor3 = Color3.fromRGB(151, 0, 0)
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -678,9 +644,9 @@ end)
 
 allcmds = {
 	"--- Player ---",
-	"re / respawn - respawns",
-	"to [plr] - Teleports to player.",
-	"sheild - Gives shield.",
+	"res / respawn - respawns",
+	"tp [plr] - Teleports to player.",
+	"shield- Gives shield.",
 	"armor - Gives armor.",
 	"kit - Gives kit.",
 	"rj - Rejoins the game.",
@@ -691,15 +657,11 @@ allcmds = {
 	"remove/ removehomescreen - removes black film.",
 	"",
 	"--- Server ---",
-	"kill [plr, _i, _g, _c, _n, _s] - Kills player.",
+	"mu [plr, _i, _g, _c, _n, _s] - Kills player.",
 	"arrest [plr] - Arrests player.",
-	"admin [plr] - Admins player.",
-	"unadmin [plr] - Unadmins player.",
-	"clearadmin - Clears all admins.",
-	"loopkill / lk [plr, _i, _g, _c, _n, _s] - Loopkills player.",
-	"unloopkill / unlk [plr] - Unloopkills player.",
-	"clearloopkill / clk - Clears all loopkills.",
-	"spike / lagspike [time] - lags server for the specified amount of seconds.",
+	"list [plr] - Admins player.",
+	"unlist [plr] - Unadmins player.",
+	"clearlist - Clears all admins.",
 	"toilet [plr] - Toilets player.",
 	"snack [plr] - Snacks player.",
 	"trash [plr] - Trashes player.",
@@ -719,7 +681,7 @@ allcmds = {
 	"autoia / autoinfammo - autoinfammo [on] and [off]",
 	"aguns / autoguns - autoguns [on] and [off]",
 	"alock / autolock - autolock [on] and [off]",
-	"auto / autorespawn - [on] and [off].",
+	"ares / autorespawn - [on] and [off].",
 	"doors - [on] and [off]",
 	"windows - [on] and [off]",
 	"walls - [on] and [off]",
@@ -811,9 +773,9 @@ for i,v in pairs(allcmds) do
 		longestText = textSize.X
 	end
 	if IsEven(i) then
-		clone.TextColor3 = Color3.fromRGB(151, 0, 0)
+		clone.TextColor3 = Color3.fromRGB(255, 0, 0)
 	else
-		clone.TextColor3 = Color3.fromRGB(151, 0, 0)
+		clone.TextColor3 = Color3.fromRGB(255, 0, 0)
 	end
 	clone.LayoutOrder = i
 end
@@ -1326,7 +1288,7 @@ lines = {} -- Create line table
 
 esp = false
 espTeams = false
-espColor = Color3.fromRGB(151, 0, 0)
+espColor = Color3.fromRGB(255, 0, 0)
 
 function espToggle(a)
 	if a == true then
@@ -1531,7 +1493,7 @@ local function outlinePart(part)
 	if part ~= nil then
 		local SelectionBox = Instance.new("SelectionBox",part)
 
-		SelectionBox.Color3 = Color3.fromRGB(151, 0, 0)
+		SelectionBox.Color3 = Color3.fromRGB(255, 0, 0)
 		SelectionBox.LineThickness = 0.01
 		SelectionBox.Adornee = part
 		SelectionBox.Name = 'Outline'
@@ -2274,22 +2236,6 @@ function LocalPlayerChatted(msg)
 	if command("rgrav") or command("rgravity") or command("rgv") or command("resetgrav") or command("resetgravity") or command("resetgv") then
 		workspace.Gravity = 196.2
 		notify("Reset "..arg1:sub(2).." to "..tostring(arg2))
-	end
-	if command("remove") or command("removehomescreen") then
-		notify("Removed Home Screen.")
-		while true do
-			wait()
-			local fuck = game:GetService("StarterGui")
-			local you = game:GetService("Players").LocalPlayer
-			local nigger = workspace.CurrentCamera 
-
-
-			you.PlayerGui.Home.intro.Visible = false 
-			you.PlayerGui.Home.fadeFrame.Visible = false 
-			nigger.CameraType = Enum.CameraType.Custom 
-			nigger.CameraSubject = workspace:WaitForChild(you.Name,0.4) 
-			fuck:SetCoreGuiEnabled(Enum.CoreGuiType.All,true)
-		end
 	end
 	if command("tp") then
 		local player = GetPlayerFromString(arg2) 
