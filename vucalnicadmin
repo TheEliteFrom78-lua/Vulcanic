@@ -389,18 +389,18 @@ Main.Name = "Main"
 Main.Parent = VulcanicAdmin
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 1
-Main.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(255, 128, 0)
 Main.Position = UDim2.new(0, 5, 1, -100)
-Main.Size = UDim2.new(0, 190, 0, 59)
+Main.Size = UDim2.new(0, 200, 0, 70)
 Main.Visible = true
 
 Bar.Name = "Bar"
 Bar.Parent = Main
 Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Bar.BorderSizePixel = 1
-Bar.BorderColor3 = Color3.fromRGB(255, 0, 0)
+Bar.BorderColor3 = Color3.fromRGB(255, 128, 0)
 Bar.Position = UDim2.new(0.0195272341, 0, 0.545114696, 0)
-Bar.Size = UDim2.new(0, 182, 0, 22)
+Bar.Size = UDim2.new(0, 192, 0, 22)
 
 Input.Name = "Input"
 Input.Parent = Bar
@@ -476,7 +476,7 @@ Padding_2.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Padding_2.BorderSizePixel = 0
 Padding_2.ClipsDescendants = true
 Padding_2.Position = UDim2.new(0.0166666675, 0, 0.042105265, 0)
-Padding_2.Size = UDim2.new(0, 174, 0, 87)
+Padding_2.Size = UDim2.new(1, 174, 0, 87)
 
 TextLabel_3.Parent = Padding_2
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
@@ -494,7 +494,7 @@ Hover1.Parent = VulcanicAdmin
 Hover1.BackgroundColor3 = Color3.fromRGB( 1, 1, 1)
 Hover1.BorderColor3 = Color3.fromRGB( 1, 1, 1)
 Hover1.Position = UDim2.new(0.0090009002, 0, 0.490291268, 0)
-Hover1.Size = UDim2.new(0, 156, 0, 16)
+Hover1.Size = UDim2.new(1, 156, 0, 16)
 Hover1.Visible = false
 
 TextLabel_4.Parent = Hover1
