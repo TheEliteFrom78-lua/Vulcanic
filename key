@@ -136,7 +136,7 @@ submit.BorderSizePixel = 0
 submit.Position = UDim2.new(0.524115741, 0, 0.702702701, 0)
 submit.Size = UDim2.new(0, 112, 0, 23)
 submit.Font = Enum.Font.SourceSansBold
-submit.Text = "Vérification"
+submit.Text = "Key Check"
 submit.TextColor3 = Color3.new(1, 1, 1)
 submit.TextSize = 14
 
