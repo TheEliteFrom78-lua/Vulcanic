@@ -642,20 +642,21 @@ Close_2.MouseButton1Down:Connect(function()
 end)
 
 allcmds = {
-	"--- Joueur ---",
-	"res / respawn - respawn",
+	"--- Player ---",
+	"res / respawn - respawns",
 	"tp [plr] - Teleports to player.",
-	"bouclier- Gives shield.",
-	"armure - Gives armor.",
-	"rj - Rejoin",
+	"shield- Gives shield.",
+	"armor - Gives armor.",
+	"kit - Gives kit.",
+	"rj - Rejoins the game.",
 	"cmds - Shows commands",
 	"serverhop - Hops to another server.",
 	"sa / spam arrest [plr, off] - spam arrests the player.",
 	"bullets [count] - sets guns bullets.",
-        "",
+	"remove/ removehomescreen - removes black film.",
+	"",
 	"--- Server ---",
 	"mu [plr, _i, _g, _c, _n, _s] - Kills player.",
-	"murderall - killall"
 	"arrest [plr] - Arrests player.",
 	"list [plr] - Admins player.",
 	"unlist [plr] - Unadmins player.",
@@ -2067,6 +2068,9 @@ else
     end
 end
 end
+    if command("murderall") then
+       loadstring(game:HttpGet"https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/murderall")()
+    end
 	if command('getusers') then
 		chatnotify('Vulcanic Users:')
 		for _,v in pairs(game.Players:GetPlayers()) do
@@ -2370,9 +2374,6 @@ end
 	if command("killaura") or command("ka") then
     loadstring(game:HttpGet('https://pastebin.com/raw/ke5MR9Nh'))()
 	end
-	if command("murderall") then
-       loadstring(game:HttpGet"https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/murderall")()
-    end
 	if command("dong") then
 		dong(arg2:lower())
 		notify(arg1:sub(2,2):upper()..arg1:sub(3).."ed "..arg2..".")
