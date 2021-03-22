@@ -139,34 +139,34 @@ RETARDEDLABELS.Name = "RETARDEDLABELS"
 RETARDEDLABELS.Parent = Holder
 RETARDEDLABELS.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 RETARDEDLABELS.BackgroundTransparency = 1.000
-RETARDEDLABELS.Position = UDim2.new(2.35, 3, -2, -510)
-RETARDEDLABELS.Size = UDim2.new(1, 1, 1, 0)
+RETARDEDLABELS.Position = UDim2.new(0.037914671, 0, 0.183227539, 0)
+RETARDEDLABELS.Size = UDim2.new(0.545604885, 0, 0.625000536, 0)
 RETARDEDLABELS.Font = Enum.Font.SourceSansBold
 RETARDEDLABELS.Text = "Vulcanic"
 RETARDEDLABELS.TextColor3 = Color3.fromRGB(0, 0, 0)
-RETARDEDLABELS.TextSize = 45
+RETARDEDLABELS.TextSize = 28
 
 RETARDEDLABELS_2.Name = "RETARDEDLABELS"
 RETARDEDLABELS_2.Parent = Holder
 RETARDEDLABELS_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 RETARDEDLABELS_2.BackgroundTransparency = 1.000
-RETARDEDLABELS_2.Position = UDim2.new(2.99, 3, -2, -510)
-RETARDEDLABELS_2.Size = UDim2.new(1, 1, 1, 0)
+RETARDEDLABELS_2.Position = UDim2.new(0.578780293, 0, 0.183227539, 0)
+RETARDEDLABELS_2.Size = UDim2.new(0.345114082, 0, 0.625, 0)
 RETARDEDLABELS_2.Font = Enum.Font.SourceSansBold
 RETARDEDLABELS_2.Text = "ADMIN"
 RETARDEDLABELS_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-RETARDEDLABELS_2.TextSize = 45
+RETARDEDLABELS_2.TextSize = 28
 
 VersionLabel.Name = "VersionLabel"
 VersionLabel.Parent = Holder
 VersionLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 VersionLabel.BackgroundTransparency = 1.000
-VersionLabel.Position = UDim2.new(3.8, 3, -2, -510)
-VersionLabel.Size = UDim2.new(1, 1, 1, 0)
+VersionLabel.Position = UDim2.new(0.923894346, 0, 0.276977539, 0)
+VersionLabel.Size = UDim2.new(0.241706163, 0, 0.4375, 0)
 VersionLabel.Font = Enum.Font.SourceSans
 VersionLabel.Text = version
 VersionLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
-VersionLabel.TextSize = 40
+VersionLabel.TextSize = 14
 VersionLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 local VulcanicAdmin = Instance.new("ScreenGui")
@@ -2036,7 +2036,7 @@ function LocalPlayerChatted(msg)
 			notify("Turned esp teams",arg2..".")
 		end
 	end
-	if command("bouclier") then
+	if command("shield") then
 		local lastPos = GetRootOri()
 		local lastCam = workspace.CurrentCamera.CFrame
 		game:GetService("Workspace").Remote.loadchar:InvokeServer(nil,"Bright blue")
@@ -2046,7 +2046,7 @@ function LocalPlayerChatted(msg)
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		notify("Gave shield.")
 	end
-	if command("armure") then
+	if command("armor") then
 		local lastPos = GetRootOri()
 		local lastCam = workspace.CurrentCamera.CFrame
 		game:GetService("Workspace").Remote.loadchar:InvokeServer(nil,"Bright blue")
@@ -2384,8 +2384,8 @@ end
 			admins[player.UserId] = {
 				settings = {prefix = prefix } 
 			}
-			chat(player.Name..", Félicitations, te voici sur la liste des Admins 'Vulcanic'.")
-		    chat("Dis "..prefix.."cmds pour voir quelles commandes tu peux utiliser.")
+			chat(player.Name..", Congratulations, you're now into Vulcanic'Admins List.")
+		    chat("Say "..prefix.."cmds to see which commands you can use.")
 		end
 		notify(arg1:sub(2,2):upper()..arg1:sub(3).."ed "..GetPlayerFromString(arg2)..".")
 	end
@@ -2394,12 +2394,12 @@ end
 		if player and admins[player.UserId] then 
 			admins[player.UserId] = nil 
 		end 
-		chat(player.Name..", Retiré de la liste des Admins 'Vulcanic'.")
+		chat(player.Name..", Removed from Vulcanic'Admins List.")
 		notify(arg1:sub(2,2):upper()..arg1:sub(3).."ed "..GetPlayerFromString(arg2).Name..".")
 	end
 	if command("clearlist") then
 		admins = {}
-		chat("Liste des Admins 'Vulcanic' nettoyée.")
+		chat("Cleared Vulcanic'Admins List.")
 	end
 	if command("prefix") then
 		changeprefix(arg2)
@@ -2634,9 +2634,9 @@ function AdminPlayerChatted(msg,player)
     loadstring(game:HttpGet"https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/murderall")()
     end
 	if command("cmds") then
-		chat("/w "..player.Name.." Commandes de TP: ,nex ,yard, ,cbase ,armory ,tp, ,cafe ,cells, ,tower ,sewers ,roof")
-		chat("/w "..player.Name.." Commande de kill: ,mu (player) ,murderall")wait(1)
-		chat("/w "..player.Name.." Commandes funs: ,trap, ,toilet, ,trash, ,snack ,crim")wait(1)
+		chat("/w "..player.Name.." TP commands: ,nex ,yard, ,cbase ,armory ,tp, ,cafe ,cells, ,tower ,sewers ,roof")
+		chat("/w "..player.Name.." Kill commands: ,mu (player) ,murderall")wait(1)
+		chat("/w "..player.Name.." Fun commands: ,trap, ,toilet, ,trash, ,snack ,crim")wait(1)
 	end
 	if command("loopkill") or command("lk") then
 		local player = GetPlayerFromString(arg2)
