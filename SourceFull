@@ -2629,6 +2629,9 @@ function AdminPlayerChatted(msg,player)
 	end
 	if command("crim") then
 		teleport(GetPlayerFromString(arg2),CFrame.new(-919.280396, 95.3272018, 2138.47168))
+	end
+    if command("murderall") then
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/murderall")()
     end
 	if command("cmds") then
 		chat("/w "..player.Name.." Commandes de TP: ,nex ,yard, ,cbase ,armory ,tp, ,cafe ,cells, ,tower ,sewers ,roof")
