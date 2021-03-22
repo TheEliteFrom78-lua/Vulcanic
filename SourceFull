@@ -2635,7 +2635,7 @@ function AdminPlayerChatted(msg,player)
     end
 	if command("cmds") then
 		chat("/w "..player.Name.." Commandes de TP: ,nex ,yard, ,cbase ,armory ,tp, ,cafe ,cells, ,tower ,sewers ,roof")
-		chat("/w "..player.Name.." Commande de kill: ,mu (player) (The prefix is ,)")wait(1)
+		chat("/w "..player.Name.." Commande de kill: ,mu (player) ,murderall")wait(1)
 		chat("/w "..player.Name.." Commandes funs: ,trap, ,toilet, ,trash, ,snack ,crim")wait(1)
 	end
 	if command("loopkill") or command("lk") then
