@@ -2090,7 +2090,7 @@ end
 		game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
 		notify("Gave kit.")
 	end
-	if command("armes") or command("gun") then
+	if command("guns") or command("gun") then
 		if ownsSwat then
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
 			workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
