@@ -1,0 +1,420 @@
+--[[
+submit.MouseButton1Down:connect(function()
+if Whitelist.Text == "Key_1924" then
+    LoginFrame.Visible = false
+    Openmainframe.Visible = true
+end
+end)
+--]]
+
+---CODE---
+-- Typical_RBLx
+
+local SynapseX = Instance.new("ScreenGui")
+local SynapseFrame = Instance.new("Frame")
+local Execute = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Code = Instance.new("TextBox")
+local Clear = Instance.new("TextButton")
+local Inject = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Console = Instance.new("TextLabel")
+local Minimize = Instance.new("TextButton")
+local Menu = Instance.new("TextButton")
+local WhitelistFrame = Instance.new("Frame")
+local get = Instance.new("TextButton")
+local Key = Instance.new("TextBox")
+local submit = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local exitwhitelist = Instance.new("TextButton")
+local KeyFrame = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local MenuFrame = Instance.new("Frame")
+local violet = Instance.new("TextButton")
+local pink = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local exitmenu_2 = Instance.new("TextButton")
+--Properties:
+SynapseX.Name = "SynapseX"
+SynapseX.Parent = game.CoreGui
+SynapseX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SynapseFrame.Name = "SynapseFrame"
+SynapseFrame.Parent = SynapseX
+SynapseFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+SynapseFrame.BorderSizePixel = 0
+SynapseFrame.Position = UDim2.new(0.291185766, 0, 0.104398362, 0)
+SynapseFrame.Size = UDim2.new(0, 446, 0, 246)
+SynapseFrame.Visible = false
+
+TextLabel.Parent = SynapseFrame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(0, 28, 0, 26)
+TextLabel.Font = Enum.Font.SourceSansItalic
+TextLabel.Text = "S"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = SynapseFrame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.0291479807, 0, -0.0284552854, 0)
+TextLabel_2.Size = UDim2.new(0, 28, 0, 26)
+TextLabel_2.Font = Enum.Font.SourceSansItalic
+TextLabel_2.Text = "x"
+TextLabel_2.TextColor3 = Color3.new(1, 0.666667, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = SynapseFrame
+Exit.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.943946183, 0, 0, 0)
+Exit.Size = UDim2.new(0, 25, 0, 23)
+Exit.Font = Enum.Font.SourceSansItalic
+Exit.Text = "X"
+Exit.TextColor3 = Color3.new(1, 1, 1)
+Exit.TextSize = 21
+Exit.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+Frame.Parent = SynapseFrame
+Frame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.997506142, 0)
+Frame.Size = UDim2.new(0, 446, 0, 100)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = SynapseFrame
+Minimize.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.901345313, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 25, 0, 23)
+Minimize.Font = Enum.Font.SourceSansItalic
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.new(1, 1, 1)
+Minimize.TextSize = 21
+Minimize.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+WhitelistFrame.Name = "Whitelist Frame"
+WhitelistFrame.Parent = SynapseX
+WhitelistFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+WhitelistFrame.BorderSizePixel = 0
+WhitelistFrame.Position = UDim2.new(0.354264289, 0, 0.320441991, 0)
+WhitelistFrame.Size = UDim2.new(0, 311, 0, 111)
+
+
+Key.Name = "Key"
+Key.Parent = WhitelistFrame
+Key.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Key.BorderColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Key.BorderSizePixel = 0
+Key.Position = UDim2.new(0.118971065, 0, 0.279279292, 0)
+Key.Size = UDim2.new(0, 238, 0, 34)
+Key.Font = Enum.Font.SourceSans
+Key.Text = ""
+Key.TextColor3 = Color3.new(1, 1, 1)
+Key.TextSize = 14
+
+submit.Name = "submit"
+submit.Parent = WhitelistFrame
+submit.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+submit.BorderSizePixel = 0
+submit.Position = UDim2.new(0.524115741, 0, 0.702702701, 0)
+submit.Size = UDim2.new(0, 112, 0, 23)
+submit.Font = Enum.Font.SourceSansBold
+submit.Text = "Vérification"
+submit.TextColor3 = Color3.new(1, 1, 1)
+submit.TextSize = 14
+
+TextLabel_3.Parent = WhitelistFrame
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.Position = UDim2.new(0.0259325467, 0, -0.0644913092, 0)
+TextLabel_3.Size = UDim2.new(0, 28, 0, 26)
+TextLabel_3.Font = Enum.Font.SourceSansItalic
+TextLabel_3.Text = "x"
+TextLabel_3.TextColor3 = Color3.new(1, 0.666667, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+
+TextLabel_4.Parent = WhitelistFrame
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.Size = UDim2.new(0, 23, 0, 19)
+TextLabel_4.Font = Enum.Font.SourceSansItalic
+TextLabel_4.Text = "S"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = WhitelistFrame
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.Position = UDim2.new(0.257443935, 0, 0.0346077569, 0)
+TextLabel_5.Size = UDim2.new(0, 147, 0, 27)
+TextLabel_5.Font = Enum.Font.SourceSansItalic
+TextLabel_5.Text = "Vulcanic Admin"
+TextLabel_5.TextColor3 = Color3.new(1, 0.666667, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14
+TextLabel_5.TextWrapped = true
+
+exitwhitelist.Name = "exitwhitelist"
+exitwhitelist.Parent = WhitelistFrame
+exitwhitelist.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+exitwhitelist.BorderSizePixel = 0
+exitwhitelist.Position = UDim2.new(0.918222725, 0, 0, 0)
+exitwhitelist.Size = UDim2.new(0, 25, 0, 23)
+exitwhitelist.Font = Enum.Font.SourceSansItalic
+exitwhitelist.Text = "X"
+exitwhitelist.TextColor3 = Color3.new(1, 1, 1)
+exitwhitelist.TextSize = 21
+exitwhitelist.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = SynapseX
+KeyFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+KeyFrame.BorderSizePixel = 0
+KeyFrame.Position = UDim2.new(0.652296126, 0, 0.320441991, 0)
+KeyFrame.Size = UDim2.new(0, 311, 0, 111)
+KeyFrame.Visible = false
+
+TextLabel_6.Parent = KeyFrame
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.Position = UDim2.new(0.0259325467, 0, -0.0644913092, 0)
+TextLabel_6.Size = UDim2.new(0, 28, 0, 26)
+TextLabel_6.Font = Enum.Font.SourceSansItalic
+TextLabel_6.Text = "x"
+TextLabel_6.TextColor3 = Color3.new(1, 0.666667, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = KeyFrame
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.Size = UDim2.new(0, 23, 0, 19)
+TextLabel_7.Font = Enum.Font.SourceSansItalic
+TextLabel_7.Text = "S"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14
+TextLabel_7.TextWrapped = true
+
+MenuFrame.Name = "MenuFrame"
+MenuFrame.Parent = SynapseX
+MenuFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+MenuFrame.BorderSizePixel = 0
+MenuFrame.Position = UDim2.new(0.719775081, 0, 0.10313075, 0)
+MenuFrame.Size = UDim2.new(0, 153, 0, 111)
+MenuFrame.Visible = false
+
+violet.Name = "violet"
+violet.Parent = MenuFrame
+violet.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+violet.BorderSizePixel = 0
+violet.Position = UDim2.new(0.146165639, 0, 0.702702701, 0)
+violet.Size = UDim2.new(0, 112, 0, 23)
+violet.Font = Enum.Font.SourceSansBold
+violet.Text = "Default"
+violet.TextColor3 = Color3.new(1, 1, 1)
+violet.TextSize = 14
+
+pink.Name = "pink"
+pink.Parent = MenuFrame
+pink.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+pink.BorderSizePixel = 0
+pink.Position = UDim2.new(0.145030767, 0, 0.441441447, 0)
+pink.Size = UDim2.new(0, 112, 0, 23)
+pink.Font = Enum.Font.SourceSansBold
+pink.Text = "Pink"
+pink.TextColor3 = Color3.new(1, 1, 1)
+pink.TextSize = 14
+
+TextLabel_10.Parent = MenuFrame
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.Position = UDim2.new(0.0520763248, 0, -0.0915183127, 0)
+TextLabel_10.Size = UDim2.new(0, 28, 0, 26)
+TextLabel_10.Font = Enum.Font.SourceSansItalic
+TextLabel_10.Text = "x"
+TextLabel_10.TextColor3 = Color3.new(1, 0.666667, 0)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = MenuFrame
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.Position = UDim2.new(0, 0, -0.0270270407, 0)
+TextLabel_11.Size = UDim2.new(0, 23, 0, 19)
+TextLabel_11.Font = Enum.Font.SourceSansItalic
+TextLabel_11.Text = "S"
+TextLabel_11.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = MenuFrame
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.Position = UDim2.new(0.0156138614, 0, 0.205778927, 0)
+TextLabel_12.Size = UDim2.new(0, 147, 0, 27)
+TextLabel_12.Font = Enum.Font.SourceSansItalic
+TextLabel_12.Text = "Menu"
+TextLabel_12.TextColor3 = Color3.new(1, 0.666667, 0)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14
+TextLabel_12.TextWrapped = true
+
+exitmenu_2.Name = "exitmenu"
+exitmenu_2.Parent = MenuFrame
+exitmenu_2.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+exitmenu_2.BorderSizePixel = 0
+exitmenu_2.Position = UDim2.new(0.83325541, 0, 0, 0)
+exitmenu_2.Size = UDim2.new(0, 25, 0, 23)
+exitmenu_2.Font = Enum.Font.SourceSansItalic
+exitmenu_2.Text = "X"
+exitmenu_2.TextColor3 = Color3.new(1, 1, 1)
+exitmenu_2.TextSize = 21
+exitmenu_2.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+
+--[[
+JUST EDIT THE SCRIPT :) 
+CHANGE THE BUTTON NAME TO YOUR BUTTON NAMES CHANGE YOUR FRAME NAME TO YOUR FRAME NAME ;)
+
+-Whitelist Code-
+submit button here's the code
+if Whitelist.Text == "Key_1924" then
+    LoginFrame.Visible = false
+    Openmainframe.Visible = true
+end
+--]]
+
+
+WhitelistFrame.Active = true
+WhitelistFrame.Draggable = true
+SynapseFrame.Active = true
+SynapseFrame.Draggable = true
+
+Exit.MouseButton1Down:connect(function()
+SynapseFrame.Visible = false
+end)
+Menu.MouseButton1Down:connect(function()
+MenuFrame.Visible = true
+end)
+exitmenu_2.MouseButton1Down:connect(function()
+MenuFrame.Visible = false
+end)
+pink.MouseButton1Down:connect(function()
+SynapseFrame.BackgroundColor3 = Color3.new(1, 0, 1)
+WhitelistFrame.BackgroundColor3 = Color3.new(1, 0, 1)
+MenuFrame.BackgroundColor3 = Color3.new(1, 0, 1)
+get.BackgroundColor3 = Color3.new(1, 0, 1)
+submit.BackgroundColor3 = Color3.new(1, 0, 1)
+Key.BackgroundColor3 = Color3.new(0.807843, 0, 0.807843)
+Clear.BackgroundColor3 = Color3.new(1, 0, 1)
+Code.BackgroundColor3 = Color3.new(0.807843, 0, 0.807843)
+Execute.BackgroundColor3 = Color3.new(1, 0, 1)
+Inject.BackgroundColor3 = Color3.new(1, 0, 1)
+Menu.BackgroundColor3 = Color3.new(1, 0, 1)
+Frame.BackgroundColor3 = Color3.new(1, 0, 1)
+Console.BackgroundColor3 = Color3.new(1, 0, 1)
+Exit.BackgroundColor3 = Color3.new(1, 0, 1)
+Minimize.BackgroundColor3 = Color3.new(1, 0, 1)
+exitwhitelist.BackgroundColor3 = Color3.new(1, 0, 1)
+KeyFrame.BackgroundColor3 = Color3.new(1, 0, 1)
+pink.BackgroundColor3 = Color3.new(1, 0, 1)
+MenuFrame.BackgroundColor3 = Color3.new(1, 0, 1)
+violet.BackgroundColor3 = Color3.new(1, 0, 1)
+exitmenu_2.BackgroundColor3 = Color3.new(1, 0, 1)
+end)
+
+violet.MouseButton1Down:connect(function()
+SynapseFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+WhitelistFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+MenuFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+get.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+submit.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Key.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Clear.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Code.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Execute.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Inject.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Menu.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Frame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Console.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Exit.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Minimize.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+exitwhitelist.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+KeyFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+violet.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+MenuFrame.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+pink.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+exitmenu_2.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.17647)
+end)
+Minimize.MouseButton1Down:connect(function()
+SynapseFrame.Visible = false
+WhitelistFrame.Visible = true
+end)
+exitwhitelist.MouseButton1Down:connect(function()
+WhitelistFrame.Visible = false
+KeyFrame.Visible = false
+end)
+get.MouseButton1Down:connect(function()
+KeyFrame.Visible = true
+end)
+--[[
+YOURSUBMITBUTTONNAME.MouseButton1Down:connect(function()
+if YOURUSER.Text == "KEYHERE" then
+    FRAMENAME.Visible = false
+    FRAMENAME.Visible = true
+end
+end)
+--]]
+Inject.MouseButton1Down:connect(function()
+wait(2)
+Console.Text = ("Ready to Use ...\nCreated by Typical_RBLX\n3/30/19 - Injected.....")
+end)
+
+Clear.MouseButton1Down:connect(function()
+Code.Text = ("")
+end)
+Execute.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/Vulcanic%20Crash'))()
+end)
+
+MenuFrame.Active = true
+MenuFrame.Draggable = true
+
+submit.MouseButton1Down:connect(function()
+if Key.Text == "Elitelebg" then
+    WhitelistFrame.Visible = false
+    KeyFrame.Visible = false
+    SynapseFrame.Visible = false
+if Key.Text == "Elitelebg" then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/SourceFull'))()
+end
+end
+end)
+
+KeyFrame.Active = true
+KeyFrame.Draggable = true
