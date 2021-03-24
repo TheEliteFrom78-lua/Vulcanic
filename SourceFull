@@ -642,6 +642,19 @@ Close_2.MouseButton1Down:Connect(function()
 end)
 
 allcmds = {
+	"--- Important Commands ---",
+	",list (name) / ,unlist (name) / ,clearlist (to admin)"
+        ",mu (name) / ,murder (name) (to kill)"
+        ",ares on / off (autorespawn)"
+        ",ka (kill aura, toggle on / off by pressing K)"
+        ",prx (to load prevail x)"
+        ",murderall (kill all)"
+        ",crashgui (SYNAPSE ONLY)"
+        ",arrest all"
+        ",prx"
+        ",aguns on / on"
+        ",guns"
+        ",sa (player) /,sa on /off (spam arrest)"
 	"--- Player ---",
 	"res / respawn - respawns",
 	"tp [plr] - Teleports to player.",
@@ -664,8 +677,7 @@ allcmds = {
 	"toilet [plr] - Toilets player.",
 	"snack [plr] - Snacks player.",
 	"trash [plr] - Trashes player.",
-	"crash - crashes server - thx Globals#9393",
-	"endserver - disconnects everyone in the server (SWAT) - thx High#9991",
+	"crashgui - crash gui to crash server",
 	"trap [plr] - Traps player.",
 	"",
 	"--- Toggles ---", 
