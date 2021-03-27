@@ -406,11 +406,11 @@ MenuFrame.Active = true
 MenuFrame.Draggable = true
 
 submit.MouseButton1Down:connect(function()
-if Key.Text == "EliteleBg+L" then
+if Key.Text == "Château Noir" then
     WhitelistFrame.Visible = false
     KeyFrame.Visible = false
     SynapseFrame.Visible = false
-if Key.Text == "EliteleBg+L" then
+if Key.Text == "Château Noir" then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TheEliteFrom78-lua/Vulcanic/main/SourceFull'))()
 end
 end
